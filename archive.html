@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>過去の活動記録 - ステップZERO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+      background: linear-gradient(135deg, #fbf7f0 0%, #f7ebe1 100%);
+      color: #333;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid #e0d0b0;
+    }
+    h1 {
+      text-align: center;
+      color: #5a122d;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 12px;
+    }
+
+    /* ギャラリー用グリッドレイアウト */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* 画像カードデザイン */
+    .gallery-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e5d8c0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover; /* 画像の比率を保ちながら綺麗にトリミング表示 */
+      display: block;
+    }
+    .gallery-caption {
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #5a122d;
+      background: #faf5ed;
+      font-size: 0.95rem;
+    }
+
+    /* ボタン */
+    .back-btn {
+      display: block;
+      width: 220px;
+      margin: 0 auto;
+      padding: 14px;
+      text-align: center;
+      background: #5a122d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .back-btn:hover {
+      background: #d4af37;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>過去の活動記録・アーカイブ</h1>
+
+    <!-- フォトギャラリー -->
+    <div class="gallery-grid">
+      
+      <!-- 記念パーティー集合写真 -->
+      <div class="gallery-card">
+        <img src="写真27周年.jpg" alt="27周年記念パーティー">
+        <div class="gallery-caption">27周年記念パーティー</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真26周年.jpg" alt="26周年記念パーティー">
+        <div class="gallery-caption">26周年記念パーティー</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真25周年2.jpg" alt="25周年記念パーティー">
+        <div class="gallery-caption">25周年記念パーティー (集合)</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真25周年1.jpg" alt="25周年記念パーティー役員">
+        <div class="gallery-caption">25周年記念パーティー</div>
+      </div>
+
+      <!-- ダンス風景・スナップ写真 -->
+      <div class="gallery-card">
+        <img src="写真a.jpg" alt="ダンスパフォーマンス">
+        <div class="gallery-caption">パーティー演舞</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真b.jpg" alt="ダンスパフォーマンス">
+        <div class="gallery-caption">パーティー演舞</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真c.jpg" alt="ダンスパフォーマンス">
+        <div class="gallery-caption">パーティー演舞</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真d.jpg" alt="ダンスパフォーマンス">
+        <div class="gallery-caption">パーティー演舞</div>
+      </div>
+
+      <!-- その他集合写真 -->
+      <div class="gallery-card">
+        <img src="写真集合1.jpg" alt="記念スナップ">
+        <div class="gallery-caption">メンバー記念撮影</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真集合2.jpg" alt="記念スナップ">
+        <div class="gallery-caption">ダンスパーティー会場にて</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="写真集合3.jpg" alt="記念スナップ">
+        <div class="gallery-caption">メンバー記念撮影</div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-btn">← トップページに戻る</a>
+  </div>
+
+</body>
+</html>
