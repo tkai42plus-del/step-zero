@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>28周年記念ダンスパーティー - ステップZERO</title>
+  <title>28周年記念パーティー開催報告 - ステップZERO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
       padding: 40px 20px;
     }
     .container {
-      max-width: 850px;
+      max-width: 950px;
       margin: 0 auto;
       background: #fff;
       padding: 40px;
@@ -51,88 +51,55 @@
       font-weight: bold;
     }
 
-    /* 概要カード */
-    .info-card {
+    /* 雑誌掲載レポートセクション */
+    .report-section {
       background: #faf5ed;
       border: 1px solid #e5d8c0;
-      border-radius: 10px;
-      padding: 25px;
+      border-radius: 12px;
+      padding: 30px;
       margin-bottom: 30px;
     }
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
+    .report-section h2 {
+      color: #5a122d;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-family: 'Shippori Mincho', serif;
+      text-align: center;
     }
-    .info-table th, .info-table td {
-      padding: 12px 10px;
-      border-bottom: 1px dashed #d4af37;
-      text-align: left;
+    
+    /* 雑誌画像の見栄え調整 */
+    .magazine-image-box {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .magazine-image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* 掲載テキストのスタイリング */
+    .report-text {
+      line-height: 2.0;
       font-size: 1.05rem;
-    }
-    .info-table th {
-      width: 25%;
-      color: #5a122d;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-
-    /* バッジ・特別ハイライト */
-    .guest-badge {
-      display: inline-block;
-      background: #b30000;
-      color: #fff;
-      font-weight: bold;
-      padding: 4px 12px;
-      border-radius: 15px;
-      font-size: 0.95rem;
-      margin-left: 8px;
-    }
-    .highlight-box {
-      background: #fff8e7;
-      border-left: 5px solid #d4af37;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 0 10px 10px 0;
-    }
-    .highlight-box h3 {
-      color: #800020;
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    /* アテンダントリスト */
-    .attendant-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .attendant-item {
+      color: #444;
       background: #fff;
-      border: 1px solid #d4af37;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.95rem;
-      font-weight: bold;
-      color: #5a122d;
+      padding: 25px;
+      border-radius: 8px;
+      border-left: 5px solid #800020;
     }
-
-    /* 振込先ボックス */
-    .bank-box {
-      background: #f4f6f8;
-      border: 1px solid #ccd1d9;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      font-size: 0.95rem;
-      line-height: 1.8;
+    .report-text p {
+      margin-bottom: 12px;
     }
-    .bank-box h4 {
-      color: #333;
-      margin-bottom: 8px;
-      border-bottom: 2px solid #5a122d;
-      padding-bottom: 4px;
-      display: inline-block;
+    .report-meta {
+      font-size: 0.9rem;
+      color: #666;
+      text-align: right;
+      margin-top: 15px;
     }
 
     .back-btn {
@@ -153,12 +120,8 @@
     }
 
     @media (max-width: 600px) {
-      .info-table th, .info-table td {
-        display: block;
-        width: 100%;
-        padding: 6px 0;
-      }
-      .info-table th { border-bottom: none; color: #800020; }
+      .container { padding: 20px; }
+      .report-section { padding: 15px; }
     }
   </style>
 </head>
@@ -167,72 +130,28 @@
   <div class="container">
     <div class="header-title">
       <h1>ステップZERO 28周年記念ダンスパーティー</h1>
-      <p>華やかな記念パーティーへ皆様をご招待いたします</p>
+      <p>ご参加いただいた皆様、誠にありがとうございました！</p>
     </div>
 
-    <!-- パーティー基本情報 -->
-    <div class="info-card">
-      <table class="info-table">
-        <tr>
-          <th>日時</th>
-          <td><strong>2026年10月23日（金曜日）</strong> 13:00 〜 17:00</td>
-        </tr>
-        <tr>
-          <th>会場</th>
-          <td>品川健康センター（京浜急行 新馬場駅 北口）</td>
-        </tr>
-        <tr>
-          <th>内容</th>
-          <td>正装トライアル・一般トライアル・デモ・ミキシング<br><small>※軽食・上手なアテンダント多数ご用意しております</small></td>
-        </tr>
-        <tr>
-          <th>特別ゲスト</th>
-          <td><strong>ロペス 様</strong> <span class="guest-badge">Special Guest</span></td>
-        </tr>
-        <tr>
-          <th>会費</th>
-          <td><strong>￥2,000</strong> <small>（※当日売りは軽食無しの場合がございます）</small></td>
-        </tr>
-        <tr>
-          <th>主催</th>
-          <td>ステップZERO （代表：左海）</td>
-        </tr>
-      </table>
-    </div>
-
-    <!-- 正装トライアル・アテンダント詳細 -->
-    <div class="highlight-box">
-      <h3>💃 正装トライアル 出場者募集中！</h3>
-      <p><strong>種目：</strong> [スタンダード] W・T・SF ／ [ラテン] R・C・S</p>
-      <p><strong>料金：</strong> 全て1曲 ￥500（フロアー代）</p>
+    <!-- 開催報告メイン -->
+    <div class="report-section">
+      <h2>🎉 パーティ・グラフィティ 開催報告</h2>
       
-      <h3 style="margin-top: 20px;">🕺 豪華アテンダント陣</h3>
-      <div class="attendant-list">
-        <span class="attendant-item">ロペス</span>
-        <span class="attendant-item">黒田隆治</span>
-        <span class="attendant-item">関根純夫</span>
-        <span class="attendant-item">小野裕史</span>
-        <span class="attendant-item">鎌方信次</span>
-        <span class="attendant-item">石川学</span>
-        <span class="attendant-item">髙木悦正</span>
-        <span class="attendant-item">小田紀子（女性）</span>
+      <!-- 雑誌掲載の写真画像を表示 -->
+      <div class="magazine-image-box">
+        <!-- ※画像ファイル名をご自身のファイル名（例: party28_report.jpg 等）に変更してください -->
+        <img src="party28_report.jpg" alt="28周年記念パーティー雑誌掲載ページ">
       </div>
-      <p style="margin-top: 12px; font-size: 0.95rem;">
-        ・アテンダントと踊る場合：一曲 ￥1,000（フロアー代含む）<br>
-        ・特別ゲスト ロペス様と踊る場合：一曲 ￥2,000（フロアー代含む）
-      </p>
-    </div>
 
-    <!-- チケット・お振込案内 -->
-    <div class="bank-box">
-      <h4>【チケット・トライアルのお申し込み方法】</h4>
-      <p>チケット代・トライアル代をお振込みいただき、FAXをいただきましたら直ちにチケットを送付し、トライアルのお受付完了といたします。</p>
-      <br>
-      <strong>〔振込先〕※名義はいずれも「ステップZERO」となります</strong><br>
-      ・<strong>ゆうちょ銀行から：</strong> 記号 10110 ／ 番号 56026611<br>
-      ・<strong>他銀行から：</strong> 店名 〇一八（ゼロイチハチ） ／ 店番 018 ／ 普通口座 5602661<br>
-      <br>
-      <small>※詳細につきましては、定例のサークルにてお気軽にお問い合わせください。</small>
+      <!-- 雑誌掲載のテキスト文章 -->
+      <div class="report-text">
+        <p><strong>ステップZERO 28周年記念パーティ</strong></p>
+        <p>10月23日（金）／ 品川健康センター 撮影：竹内洋八</p>
+        <p>品川区の品川健康センターにおいて「ステップZERO」の28周年記念パーティが盛大に開催されました。ミキシング、正装トライアル、アマデモ、ダンスタイム等、大勢のダンスファンで賑わいました。</p>
+        <div class="report-meta">
+          （専門誌掲載レポートより抜粋）
+        </div>
+      </div>
     </div>
 
     <a href="index.html" class="back-btn">← トップページに戻る</a>
